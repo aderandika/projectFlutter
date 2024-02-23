@@ -13,6 +13,7 @@ class DashboardPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(70, 0, 70, 20),
         child: Material(
           borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
           child: BottomNavigationBar(
             elevation: 0,
             backgroundColor: Colors.transparent,

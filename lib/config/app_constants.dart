@@ -26,10 +26,7 @@ class AppConstants {
 
   static List<Map> navMenuDashboard = [
     {
-      // 'view': DView.empty('Home'),
-      'view': Container(
-        color: Colors.amber,
-      ),
+      'view': DView.empty('Home'),
       'icon': Icons.home_filled,
       'label': 'Home',
     },
