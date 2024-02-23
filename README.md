@@ -1,3 +1,3 @@
-# laundry_app
+# AppFlutter
 
 A new Flutter project.
