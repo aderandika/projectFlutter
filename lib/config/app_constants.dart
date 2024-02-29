@@ -1,6 +1,7 @@
 import 'package:d_view/d_view.dart';
 import 'package:flutter/material.dart';
 import 'package:laundry_app/pages/dashboard_views/account_view.dart';
+import 'package:laundry_app/pages/dashboard_views/home_view.dart';
 
 class AppConstants {
   static const appName = 'LAUNDRY';
@@ -27,7 +28,7 @@ class AppConstants {
 
   static List<Map> navMenuDashboard = [
     {
-      'view': DView.empty('Home'),
+      'view': const HomeView(),
       'icon': Icons.home_filled,
       'label': 'Home',
     },
@@ -41,5 +42,13 @@ class AppConstants {
       'icon': Icons.account_circle,
       'label': 'Account',
     },
+  ];
+
+  static const homeCategories = [
+    'All',
+    'Regular',
+    'Express',
+    'Economical',
+    'Exlusive'
   ];
 }
