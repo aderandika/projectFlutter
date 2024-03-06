@@ -19,6 +19,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../config/nav.dart';
 import '../../providers/home_provider.dart';
+import '../detail_shop_page.dart';
 
 class HomeView extends ConsumerStatefulWidget {
   const HomeView({super.key});
@@ -351,7 +352,9 @@ class _HomeViewState extends ConsumerState<HomeView> {
                   itemBuilder: (context, index) {
                     ShopModel item = list[index];
                     return GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Nav.push(context, DetailShopPage(shop: item));
+                      },
                       child: Container(
                         margin: EdgeInsets.fromLTRB(
                           index == 0 ? 30 : 10,
