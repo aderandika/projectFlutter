@@ -34,6 +34,17 @@ class AppFormat {
     }
   }
 
+  static String shortDate(source) {
+    switch (source.runtimeType) {
+      case String:
+        return DateFormat('EEEE, d MMM yy').format(DateTime.parse(source));
+      case DateTime:
+        return DateFormat('EEEE, d MMM yy').format(source);
+      default:
+        return 'Not valid';
+    }
+  }
+
   /// source: DateTime | String\
   /// Monday, 21 Februari 2024 (format tanggal)
   static String fullDate(source) {
